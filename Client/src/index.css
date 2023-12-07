@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Kanit&family=Roboto&display=swap');
+/* font-family: 'Dancing Script', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Kanit', sans-serif;*/
+
+}
+
+/* //navbar css */
+.navbar {
+  font-family: 'Kanit', sans-serif;
+  font-size: 15px;
+  line-height: 26px;
+  
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px gray;
+  --webkit-box-shadow: 0 7px 6px -6px gray;
+  border-bottom: solid red !important;
+}
+
+.navbar :hover{
+  color: red;
+}
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  
+  border-bottom: 2px solid red ;
+}
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  color: red;
+  letter-spacing: 3px;
+}
+
+/* 
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 20px;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f71919,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: red
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+}
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+  color: red;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: red;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+.pnf-btn:hover {
+  background-color: red;
+  color: white;
+}

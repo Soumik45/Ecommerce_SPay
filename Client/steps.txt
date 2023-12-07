@@ -1,0 +1,19 @@
+npm install
+npm run dev
+
+-----------------------------------
+Bootstrap
+copy link in index.html
+
+
+----------------------
+install React router dom
+
+in Main
+We declare Route and their paths,elements
+in main.js BrowserRoute is declared and Rest work is done in App.jsx
+We can use these paths /home, /about from anypage
+
+----------------------------
+Navbar
+npm i react-icons
