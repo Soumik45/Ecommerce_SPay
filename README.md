@@ -1,5 +1,5 @@
 # Ecommerce_SPay
-Ecommerce Site using Mern Stack
+Ecommerce Site using <b>MERN</b> Stack
 
 <b> For backend </b>
 1. npm install
