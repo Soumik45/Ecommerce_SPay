@@ -7,7 +7,7 @@ Ecommerce Site using <b>MERN</b> Stack
 3. npm server
 
 <h2>Backend Features</h2>
-Register and Login
-Secured password check using encryption and decryption 
+Register and Login <br>
+Secured password check using encryption and decryption <br>
 Use of JWT Token for login
 
