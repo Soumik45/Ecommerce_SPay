@@ -1,2 +1,0 @@
-admin = soumik
-pw = realspj77
