@@ -3,7 +3,7 @@ import Layout from '../components/Layout/Layout'
 
 const Homepage = () => {
   return (
-    <Layout>
+    <Layout >
         <div>Homepage</div>
     </Layout>
   )

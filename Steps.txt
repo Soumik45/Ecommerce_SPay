@@ -34,3 +34,10 @@ then user = await new User({name :name, pw : hashpw}).save()
 Controller.js controlls the backend
 After Creating Reg and Login controllers we created Middleware
 
+-------------------
+important commands
+	"start": "nodemon server.js",
+    "client":"npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+
+	in cilent's package json we declared start as vite

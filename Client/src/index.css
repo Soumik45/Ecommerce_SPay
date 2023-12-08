@@ -48,6 +48,7 @@ font-family: 'Roboto', sans-serif; */
   color: white;
   padding: 20px;
   background: #000000; /* fallback for old browsers */
+  margin-top: 2px;
   background: -webkit-linear-gradient(
     to right,
     #f71919,
@@ -96,4 +97,14 @@ font-family: 'Roboto', sans-serif; */
 .pnf-btn:hover {
   background-color: red;
   color: white;
+}
+
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
