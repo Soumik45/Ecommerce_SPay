@@ -5,6 +5,7 @@ const dotenv = require("dotenv")
 const morgan = require("morgan")
 require("./config/db")
 const routes = require('./routes/routers')
+const cors = require('cors')
 
 dotenv.config();
 
@@ -13,7 +14,7 @@ dotenv.config();
 
 app.use(express.json());
 app.use(morgan("dev"));
-
+app.use(cors())
 
 
 //routes
