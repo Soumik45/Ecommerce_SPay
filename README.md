@@ -1,5 +1,5 @@
 # Ecommerce_SPay
-Ecommerce Site using Mern Stack
+Ecommerce Site using Mern Stack <b>
 use
-npm run dev
+<b>npm run dev</b>
 to start
