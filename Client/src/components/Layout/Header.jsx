@@ -1,7 +1,20 @@
 import React from 'react'
 import { NavLink,Link } from 'react-router-dom'
+import { useAuth } from '../../context/auth';
 import { FaShopify } from "react-icons/fa6";
+import toast from 'react-hot-toast';
 const Header = () => {
+  const [auth, setAuth] = useAuth();
+  const handleLogout = () => {
+    setAuth({
+      ...auth,
+      user: null,
+      token: "",
+    });
+    localStorage.removeItem("auth");
+    toast.success("Logout Successfully");
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -32,7 +45,9 @@ const Header = () => {
                   Category
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {
+                !auth.user ? (<>
+                <li className="nav-item">
                 <NavLink to="/register" className="nav-link">
                   Register
                 </NavLink>
@@ -42,6 +57,10 @@ const Header = () => {
                   Login
                 </NavLink>
               </li>
+                </>) : (<NavLink onClick={handleLogout} to="/login" className="nav-link">
+                  Logout
+                </NavLink>)
+              }
               <li className="nav-item">
                 <NavLink to="/cart" className="nav-link">
                   Cart (0)

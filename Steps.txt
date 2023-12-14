@@ -4,6 +4,8 @@
 	"start": "nodemon server.js"
 4. build server in server.js
 
+npm start to run 
+
 
 In server first we require the necessary imports then use dotenv
 
