@@ -1,50 +1,46 @@
-npm install
-npm run dev
+React
+1. npm init
+2. npm i express dotenv mongoose nodemon colors  morgan
+3. in package.json, inside script
+	"start": "nodemon server.js"
+4. build server in server.js
 
------------------------------------
-Bootstrap
-copy link in index.html
-
-
-----------------------
-install React router dom
-
-in Main
-We declare Route and their paths,elements
-in main.js BrowserRoute is declared and Rest work is done in App.jsx
-We can use these paths /home, /about from anypage
-
-----------------------------
-Navbar
-npm i react-icons
-
---------------------------
-For SEO npmjs
-react-helmet
-used it in Layout
-
---------------------------------------
-In Register.jsx we used hooks
+npm start to run 
 
 
-----------------------------------
-To get data we used axios
-toastify is used to give notification
+In server first we require the necessary imports then use dotenv
 
-To use toastify we imported it in app.jsx, included it in Layout  then used toast whereever we want to show notification
+---------------------------------
+Connected MongoDB
 
-------------------------------------------
-npm run dev to run both servers
+Then userModel
+we create schema and export it users,schema
+module.exports = mongoose.model("users", userSchema);
 
+Then we create Routes
+express.Router()
 
-----------------------------------
-create context hook and use it in login
+Router - > Controller
+In controller we define what to do
 
+--------------------
+for pw hash
+npm i bcrypt
+In helper.js created 2 function
 
+Then created Controller
+Here we will use userModel
 
+then user = await new User({name :name, pw : hashpw}).save()
 
+-----------------------------------------------------
+Controller.js controlls the backend
+After Creating Reg and Login controllers we created Middleware
 
+-------------------
+important commands
+	"start": "nodemon server.js",
+    "client":"npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
 
-
-
-
+	in cilent's package json we declared start as vite

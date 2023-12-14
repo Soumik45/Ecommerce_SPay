@@ -1,0 +1,50 @@
+npm install
+npm run dev
+
+-----------------------------------
+Bootstrap
+copy link in index.html
+
+
+----------------------
+install React router dom
+
+in Main
+We declare Route and their paths,elements
+in main.js BrowserRoute is declared and Rest work is done in App.jsx
+We can use these paths /home, /about from anypage
+
+----------------------------
+Navbar
+npm i react-icons
+
+--------------------------
+For SEO npmjs
+react-helmet
+used it in Layout
+
+--------------------------------------
+In Register.jsx we used hooks
+
+
+----------------------------------
+To get data we used axios
+toastify is used to give notification
+
+To use toastify we imported it in app.jsx, included it in Layout  then used toast whereever we want to show notification
+
+------------------------------------------
+npm run dev to run both servers
+
+
+----------------------------------
+create context hook and use it in login
+
+
+
+
+
+
+
+
+
